@@ -1,61 +1,7 @@
 {
   "version": "2",
   "templates": [
-   {
-			"type": 1,
-			"title": "Peppermint",
-			"name": "Peppermint",
-			"description": "Peppermint is a free and open source ticket management solution with a range of features",
-			"logo": "https://raw.githubusercontent.com/Peppermint-Lab/peppermint/master/public/logo.svg",
-			"image": "pepperlabs/peppermint:latest",
-			"categories": [
-			  "Other",
-			  "Tools",
-			  "Management"
-			],
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"ports": [
-			  "5001:5001/tcp"
-			],
-			"volumes": [
-			  {
-				"container": "/data",
-				"bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/peppermint"
-		
-			  }
-			],
-			"env": [
-			  {
-				"name": "PUID",
-				"label": "PUID",
-				"default": "1000"
-			  },
-			  {
-				"name": "PGID",
-				"label": "PGID",
-				"default": "100"
-			  },
-			  {
-				"name": "PORT",
-				"label": "PORT",
-				"default": "5001"
-			  },
-			  {
-				"name": "DB_USERNAME",
-				"label": "DB_USERNAME",
-				"default": "peppermint"
-			  },
-			  {
-				"name": "DB_PASSWORD",
-				"label": "DB_PASSWORD",
-				"default": "1234"
-			  },
-			  {
-				"name": "DB_HOST",
-				"label": "DB_HOST",
-				"default": "postgres"
-			  } ,{
+  {
 	"categories": ["Downloaders"],
 			"description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
 			"env": [
