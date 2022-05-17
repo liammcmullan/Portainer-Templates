@@ -1,10 +1,9 @@
 {
   "version": "2",
   "templates": [
-  {	
-
+    {
       "categories": ["Other"],
-      "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, itâ€™ll cover ALL your home devices, and you donâ€™t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
+      "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
       "env": [
         {
           "default": "1000",
@@ -51,59 +50,6 @@
         }
       ]
     },
-    {
-	"categories": ["Other","VPN","Tools"],
-			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
-			"env": [
-				{
-					"default": "1001",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1001",
-					"label": "PGID",
-					"name": "PUID"
-				},
-				{
-					"default": "MULLVAD",
-					"description": "see https://github.com/sgtsquiggs/docker-deluge-openvpn",
-					"label": "OPENVPN_PROVIDER",
-					"name": "OPENVPN_PROVIDER"
-				},
-				{
-					"label": "OPENVPN_USERNAME",
-					"name": "OPENVPN_USERNAME"
-				},
-				{
-					"label": "OPENVPN_PASSWORD",
-					"name": "OPENVPN_PASSWORD"
-				}
-			],
-			"image": "sgtsquiggs/deluge-openvpn:latest",
-			"name": "deluge-openvpn",
-			"platform": "linux",
-			"ports": [
-				"8112:8112/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Deluge openvpn",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/etc/localtime",
-					"container": "/etc/localtime"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/DelugeOpenVPN/config",
-					"container": "/config"
-				}
-			]
-		},
     {
       "categories": ["Music"],
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
@@ -1110,7 +1056,7 @@
     },
     {
       "categories": ["Music"],
-      "description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, ÂµTorrent and Blackhole.",
+      "description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
       "env": [
         {
           "default": "1000",
@@ -1336,7 +1282,7 @@
     },
     {
       "categories": ["Video"],
-      "description": "Headless installation of Kodiâ„¢ (formerly known as XBMCâ„¢), to enable library updates.",
+      "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
       "env": [
         {
           "default": "1000",
@@ -2211,7 +2157,7 @@
     },
     {
       "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
-      "description": "ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easilyâ€”all under your control. ownCloudâ€™s open architecture is extensible via a simple but powerful API for applications and plugins and it works with any storage.",
+      "description": "ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easily—all under your control. ownCloud’s open architecture is extensible via a simple but powerful API for applications and plugins and it works with any storage.",
       "env": [
         {
           "default": "1000",
@@ -2586,7 +2532,7 @@
     },
     {
       "categories": ["Downloaders"],
-      "description": "The qBittorrent project aims to provide an open-source software alternative to ÂµTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+      "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
       "env": [
         {
           "default": "1000",
@@ -2650,7 +2596,7 @@
     },
     {
       "categories": ["Downloaders", "Video"],
-      "description": "Radarr - A fork of Sonarr to work with movies Ã  la Couchpotato.",
+      "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
       "env": [
         {
           "default": "1000",
@@ -3149,7 +3095,7 @@
     },
     {
       "categories": ["Downloaders"],
-      "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, ÂµTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
+      "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
       "env": [
         {
           "default": "1000",
