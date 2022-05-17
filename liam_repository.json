@@ -50,12 +50,8 @@
         }
       ]
     },
-    		{
-			"categories": [
-				"Other",
-				"VPN",
-				"Tools"
-			],
+    {
+	"categories": ["Other","VPN","Tools"],
 			"description": "This container contains OpenVPN and Deluge with a configuration where Deluge is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
