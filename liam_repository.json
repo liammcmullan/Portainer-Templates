@@ -2,37 +2,7 @@
   "version": "2",
   "templates": [
   {	
-    "categories": ["Downloaders"],
-			"description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "lscr.io/linuxserver/cardigann:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
-			"name": "cardigann",
-			"platform": "linux",
-			"ports": [
-				"5060:5060/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Cardigann",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Cardigann",
-					"container": "/config"
-				}
-			]
-		},{
+
       "categories": ["Other"],
       "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
       "env": [
